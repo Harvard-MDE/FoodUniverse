@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        
         <title>Food Universe, V 1.0</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+            canvas {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
     </head>
     <body>
-        <div>
-            <h1>Just another food universe</h1>
-            <p>Kevin Gao & Cedric-Pascal Sommer</p>
-            <p>Harvard MDE 2023</p>
-        </div>
+
+        <!-- Canvas -->
+        <canvas id="c">   
+        </canvas>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="js/main.js" type="module"></script>
+
     </body>
 </html>
