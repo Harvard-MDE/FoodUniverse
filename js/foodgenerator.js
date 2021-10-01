@@ -1,5 +1,7 @@
 //import * as THREE from '../node_modules/three/build/three.module.js';
 
+import { OrbitControls } from './OrbitControls.js';
+
 let canvas, renderer, camera, scene;
 
 let meals = [];
@@ -145,6 +147,7 @@ function drawBlock(origin, color, group) {
 
 }
 
+
 function init() {
 
     //Select canvas from HTML
@@ -154,6 +157,8 @@ function init() {
     renderer = new THREE.WebGLRenderer({canvas});
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+
 
     var fov = 75;
     var aspect = window.innerWidth/window.innerHeight;
@@ -173,6 +178,17 @@ function init() {
     //camera.position.set(0, 25, 0);
     //camera.rotation.set(-1.58, 0, 0);
 
+        
+    // Controls
+
+    const controls = new OrbitControls( camera, renderer.domElement );
+    controls.minDistance = 1;
+    controls.maxDistance = 8;
+    controls.target.set( 0, 1, 0 );
+    controls.update();
+
+
+    
     scene = new THREE.Scene();
 
     //Add ambient light 1
