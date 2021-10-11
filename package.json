@@ -45,7 +45,7 @@
     "serve": "^6.4.8",
     "simplex-noise": "^2.3.0",
     "stats-js": "^1.0.0-alpha1",
-    "three": "^0.85.2",
+    "three": "0.85.2",
     "three.meshline": "^1.0.3",
     "tinycolor2": "^1.4.1",
     "webvr-polyfill": "^0.9.29",

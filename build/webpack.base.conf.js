@@ -34,12 +34,6 @@ module.exports = {
         }
     },
     plugins: [
-        new CopyWebpackPlugin([
-            {from: 'src/fonts/', to: 'assets/fonts/'},
-            {from: 'src/models/', to: 'assets/models/'},
-            {from: 'src/sounds/', to: 'assets/sounds/'},
-            {from: 'src/textures/', to: 'assets/textures/'},
-        ]),
         new webpack.ProvidePlugin({
             'THREE': 'three'
         }),

@@ -65,7 +65,7 @@ class Atmosphere {
     }
 
     else {
-      this.size = Math.max(1030+((co2PerGram/this.atmosphereTreshhold4)*70), 1100);
+      this.size = Math.min(1030+((co2PerGram/this.atmosphereTreshhold4)*70), 1100);
     }
 
     this.atmosphere = Math.min(co2PerGram/this.atmosphereTreshhold3, 0.8);

@@ -1,0 +1,37 @@
+{
+    "systemName": "Massachusetts",
+            "coords": {
+                "lat": 42.164863,
+                "long": -70.621486
+            },
+            "area": "Cambridge",
+            "jurisdictions" : [
+                {
+                    "id": "Henrietta's Table",
+                    "description": "",
+                    "area": "Henrietta's Table",
+                    "astre" :{
+                        "astreName" : "Henrietta Chief Special",
+                        "Xposition": 13410441,
+                        "Yposition": 0,
+                        "Zposition": 0,
+                        "size":2000,
+                        "texture": "hurston2.jpg",
+                        "color": "rgb(82, 186, 198)"
+                    },
+                    "moons": [
+                        {
+                            "name": "Avocado Toast",
+                            "area": "Henrietta's Table",
+                            "Xposition": 1,
+                            "Yposition": 0,
+                            "Zposition": 1,
+                            "size":1000,
+                            "texture": "arial.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        }
+                       
+                    ]
+                }
+            ]
+}

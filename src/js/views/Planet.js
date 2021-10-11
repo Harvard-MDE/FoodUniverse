@@ -100,7 +100,7 @@ class Planet {
    * Gets called every frame by animate function, rotates ground stars etc and updates random generation of elements
    */
   update() {
-
+    console.log('renderQueue:update!')
     if (this.rotate) {
       this.ground.rotation.y += 0.0005;
       this.clouds.view.rotation.y += 0.001; //(this.menuItem.getTotalCo2PerGram()/60)*0.005;
@@ -304,6 +304,7 @@ class Planet {
    * Updates 6 materials, assigns each the right map. Then, all maps are put onto the object together (so the height map, normal map, moisture map, ...)
    */
   updateMaterial() {
+    console.log('renderQueue:updateMaterial!')
     for (let i=0; i<6; i++) {
       let material = this.materials[i];
       material.roughness = this.roughness;

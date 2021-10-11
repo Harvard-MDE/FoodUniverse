@@ -1,0 +1,202 @@
+{
+    "systemName": "Massachusetts",
+            "coords": {
+                "lat": 42.164863,
+                "long": -70.621486
+            },
+            "area": "Cambridge",
+            "jurisdictions" : [
+                {
+                    "id": "Henrietta's Table",
+                    "description": "",
+                    "area": "Henrietta's Table",
+                    "astre" :{
+                        "astreName" : "Henrietta Chief Special",
+                        "Xposition": 13410441,
+                        "Yposition": 0,
+                        "Zposition": 0,
+                        "size":2000,
+                        "texture": "hurston2.jpg",
+                        "color": "rgb(82, 186, 198)"
+                    },
+                    "moons": [
+                        {
+                            "name": "Avocado Toast",
+                            "area": "Henrietta's Table",
+                            "Xposition": 1,
+                            "Yposition": 0,
+                            "Zposition": 1,
+                            "size":1000,
+                            "texture": "arial.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Homemade Granola",
+                            "area": "Henrietta's Table",
+                            "Xposition": -0.6,
+                            "Yposition": 0,
+                            "Zposition": 1,
+                            "size":1000,
+                            "texture": "ita.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Housemade Pumpkin Bread",
+                            "area": "Henrietta's Table",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": -0.8,
+                            "size":1000,
+                            "texture": "aberdeen.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Housemade Muffins",
+                            "area": "Henrietta's Table",
+                            "Xposition": -0.6,
+                            "Yposition": 0,
+                            "Zposition": -1.0,
+                            "size":1000,
+                            "texture": "aberdeen.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Russell House Tavern",
+                    "description": "",
+                    "area": "Russell House Tavern",
+                    "astre" :{
+                        "astreName" : "Ivy League Platter",
+                        "Xposition":-18378987,
+                        "Yposition": 0,
+                        "Zposition": -2917765,
+                        "size":5000,
+                        "texture": "crusader.jpg",
+                        "color": "rgb(82, 186, 198)"
+                    },
+                    "moons": [
+                        {
+                            "name": "R. House Burger",
+                            "Xposition": 1,
+                            "Yposition": 0,
+                            "Zposition": 1,
+                            "size":1000,
+                            "texture": "yela.jpg",
+                            "color": "rgba(82, 186, 198, 0.2)"
+                        },
+                        {
+                            "name": "Crab Cakes",
+                            "Xposition": -0.6,
+                            "Yposition": 0,
+                            "Zposition": 1,
+                            "size":1000,
+                            "texture": "yela.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Summer Salad",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": -0.8,
+                            "size":1000,
+                            "texture": "daymar.jpg",
+                            "color": "rgb(82, 186, 198)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Sumiao Hunan Kitchen",
+                    "description": "",
+                    "area": "Sumiao Hunan Kitchen",
+                    "astre" :{
+                        "astreName" : "La Rou with Mushrooms",
+                        "Xposition": 19267868,
+                        "Yposition": 0,
+                        "Zposition": 22121256,
+                        "size":1600,
+                        "texture": "arccorp.jpg",
+                        "color": "rgb(82, 186, 198)"
+                    },
+                    "moons": [
+                        {
+                            "name": "Kung Pao Shrimp",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": -0.8,
+                            "size":1000,
+                            "texture": "",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Spicy Silky Tofu",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": 1.8,
+                            "size":1000,
+                            "texture": "",
+                            "color": "rgb(82, 186, 198)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Alden & Harlow",
+                    "description": "",
+                    "area": "Alden & Harlow",
+                    "astre" :{
+                        "astreName" : "Ora King Salmon",
+                        "Xposition": 22744621,
+                        "Yposition": 0,
+                        "Zposition": -37255959,
+                        "size":2000,
+                        "texture": "microtech.jpg",
+                        "color": "rgb(82, 186, 198)"
+                    },
+                    "moons": [
+                        {
+                            "name": "Smoked Chocolate Bread Pudding",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": -0.8,
+                            "size":1000,
+                            "texture": "",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Roasted Stone Fruit Skillet",
+                            "Xposition": 0.6,
+                            "Yposition": 0,
+                            "Zposition": 1.8,
+                            "size":1000,
+                            "texture": "",
+                            "color": "rgb(82, 186, 198)"
+                        },
+                        {
+                            "name": "Sweet Corn Panna Cotta",
+                            "Xposition": -0.6,
+                            "Yposition": 0,
+                            "Zposition": -0.6,
+                            "size":1000,
+                            "texture": "",
+                            "color": "rgb(82, 186, 198)"
+                        }
+                    ]
+                },
+                {
+                    "id": "New Harvard Restuarant",
+                    "description": "",
+                    "area": "New Harvard Restuarant",
+                    "astre" :{
+                        "astreName" : "Hi Food",
+                        "Xposition": 20416175,
+                        "Yposition": 0,
+                        "Zposition": -33587889,
+                        "size":2000,
+                        "texture": null,
+                        "color": "rgb(0, 0, 0)"
+                    },
+                    "moons": [
+                    ]
+                }
+            ]
+}

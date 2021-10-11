@@ -1,10 +1,11 @@
 import * as THREE from 'three';
 import 'three/examples/js/controls/OrbitControls';
-
 import Planet from './views/Planet.js';
 import RenderQueue from './views/RenderQueue';
-
 import BlockLoader from './food/BlockLoader.js';
+
+//import Planet from './planet.js';
+//import Orbit from "./Orbit";
 
 class Main {
 
@@ -19,7 +20,7 @@ class Main {
         this._scene = new THREE.Scene();
 
         //Create renderer
-        this._renderer = new THREE.WebGLRenderer({antialias: false, alpha: false}); //set alpha to true
+        this._renderer = new THREE.WebGLRenderer({antialias: false, alpha: true}); //set alpha to true
         this._renderer.setPixelRatio( window.devicePixelRatio );
         this._renderer.sortObjects = false;
         this._renderer.setSize( window.innerWidth, window.innerHeight );
@@ -29,7 +30,7 @@ class Main {
         //Create render queue
         //window.renderQueue = new RenderQueue();
 
-        //Create lights
+        //Create lights ?
         this.ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
         this._scene.add(this.ambientLight);
 
@@ -54,13 +55,32 @@ class Main {
         var block = blockLoader.loadDefaultBlock1();
         var restaurant = block.restaurants[0];
         var menu = restaurant.menus[0];
-        var item = menu.items[0];
+        var item = menu.items[0]; 
+        //one dish
 
         //Create planet with all features (in sub-classes)
+        this.planet_0 = new Planet(item);
+        this.planet_1= new Planet(item);
 
-        this.planet = new Planet(item);
-        this.scene.add(this.planet.view);
+        this.jurisdictionGroup = new THREE.Group()
+        this.scale = 1
+      
+        this.jurisdictionGroup.add(this.planet_0.view)
+        this.jurisdictionGroup.add(this.planet_1.view)
 
+
+        this.planet_0.view.position.x = 4000 / this.scale
+        this.planet_0.view.position.y = 0 / this.scale
+        this.planet_0.view.position.z = 1 / this.scale
+
+        this.jurisdictionGroup.position.x = 1 / this.scale
+        this.jurisdictionGroup.position.y = 0 / this.scale
+        this.jurisdictionGroup.position.z = 1 / this.scale
+
+        // this.planet = new Planet(this.jurisdictionGroup, this.data)
+        // this.orbit = new Orbit(this.jurisdictionGroup, this.scale, this.data.astre.Xposition, this.data.astre.Zposition, this.data.astre.color, this.data.astre.focusColor)
+
+        this.scene.add(this.jurisdictionGroup);
         this.animate();
 
     }
@@ -96,7 +116,9 @@ class Main {
         //this.stats.end();
 
         window.renderQueue.update();
-        this.planet.update();
+
+        this.planet_0.update();
+        // this.planet_1.update();
 
     }
 
